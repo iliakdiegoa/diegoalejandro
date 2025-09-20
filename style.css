@@ -1,39 +1,72 @@
+/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
-  color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #0e0e0e;
+  color: #fff;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 400px;
-  margin: 50px auto;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
 }
 
+/* Foto de perfil */
 .perfil {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 3px solid white;
-  margin-bottom: 20px;
+  border: 3px solid #fff;
+  margin: 20px auto;
+  display: block;
 }
 
-a {
+/* Nombre */
+h1 {
+  font-size: 1.8em;
+  margin: 10px 0 5px;
+}
+p {
+  font-size: 1em;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* Galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Links */
+.links a {
   display: block;
   margin: 10px 0;
   padding: 12px;
-  background: white;
-  color: #1e1e2f;
+  background: #fff;
+  color: #000;
   text-decoration: none;
   border-radius: 30px;
   font-weight: bold;
   transition: 0.3s;
 }
 
-a:hover {
+.links a:hover {
   background: #ff9800;
-  color: white;
+  color: #fff;
 }
